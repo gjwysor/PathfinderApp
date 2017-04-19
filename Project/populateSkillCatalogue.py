@@ -61,6 +61,55 @@ Skill(skill_name='Disable Device', skill_ability='DEX', skill_trainedOnly=True, 
 	skill_descShort='The Disable Device skill determines your ability to disarm traps and open locks. It also allows you to sabotage simple mechanical devices.', skill_tryAgain=False, 
 	skill_special=True, skill_classRestrict=True, skill_untrained=False, skill_classSkill=['Rogue']).put()
 	
+#Disguise
+Skill(skill_name='Disguise', skill_ability='CHA', skill_trainedOnly=False, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/disguise.html#disguise', 
+	skill_descShort='The Disguise skill determines your ability to change your appearance.', skill_tryAgain=False, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Bard', 'Rogue']).put()
+	
+#Escape Artist
+Skill(skill_name='Escape Artist', skill_ability='DEX', skill_trainedOnly=False, skill_armorCheckPenalty=True, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/escapeArtist.html#escape-artist', 
+	skill_descShort='The Escape Artist skill determines your ability to escape from bonds or grapples.', skill_tryAgain=False, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Bard', 'Monk', 'Rogue']).put()
+	
+#Fly
+Skill(skill_name='Fly', skill_ability='DEX', skill_trainedOnly=False, skill_armorCheckPenalty=True, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/fly.html#fly', 
+	skill_descShort='The Fly skill determines your skill at flying, using wings or magic. This skill does not give you the ability to fly.', skill_tryAgain=False, skill_special=True, 
+	skill_classRestrict=False, skill_untrained=True, skill_classSkill=['Druid', 'Sorcerer', 'Wizard']).put()
+	
+#Handle Animal
+Skill(skill_name='Handle Animal', skill_ability='CHA', skill_trainedOnly=True, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/handleAnimal.html#handle-animal', 
+	skill_descShort='The Handle Animal skill allows you to domesticate animals, as well as train them to follow commands and teach them tricks.', skill_tryAgain=False, skill_special=True, 
+	skill_classRestrict=False, skill_untrained=False, skill_classSkill=['Barbarian', 'Druid', 'Fighter', 'Paladin', 'Ranger']).put()
+
+#Heal
+Skill(skill_name='Heal', skill_ability='WIS', skill_trainedOnly=False, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/heal.html#heal', 
+	skill_descShort='The Heal skill determines your ability to tend to wounds and heal ailments.', skill_tryAgain=False, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Cleric', 'Druid', 'Paladin', 'Ranger']).put()
+	
+#Intimidate
+Skill(skill_name='Intimidate', skill_ability='CHA', skill_trainedOnly=False, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/intimidate.html#intimidate', 
+	skill_descShort='The Intimidate Skill determines your ability to threaten or frighten an opponent into cooperating with you.', skill_tryAgain=False, skill_special=True, skill_classRestrict=False, 
+	skill_untrained=True, skill_classSkill=['Barbarian', 'Bard', 'Fighter', 'Monk', 'Ranger', 'Rogue', 'Sorcerer']).put()
+	
+#Knowledge
+Skill(skill_name='Knowledge', skill_ability='INT', skill_trainedOnly=True, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/knowledge.html#knowledge', 
+	skill_descShort='The Knowledge skill determines your scholarly expertise on a particular subject matter.', skill_tryAgain=False, skill_special=False, skill_classRestrict=False, skill_untrained=False, 
+	skill_classSkill=['Cleric'], skill_hasSubSkill=True).put() #Knowledge subskill classSkill property should exclude cleric as it is included by default
+	
+#Linguistics
+Skill(skill_name='Linguistics', skill_ability='INT', skill_trainedOnly=True, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/linguistics.html#linguistics', 
+	skill_descShort='The Linguistics skill determines your aptitude to read, write, and speak other languages. You can decipher nearly any language given enough time, and your ability to write allows you to create and detect forgeries with ease.', 
+	skill_tryAgain=True, skill_special=True, skill_classRestrict=False, skill_untrained=False, 
+	skill_classSkill=['Bard', 'Cleric', 'Rogue', 'Wizard']).put()
+	
+#Perception
+Skill(skill_name='Perception', skill_ability='WIS', skill_trainedOnly=False, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/perception.html#perception', 
+	skill_descShort='The Perception skill determines your ability to notice details around you as well as sense impending danger. This skill includes all five senses, sight, hearing, touch, taste, and smell.',
+	skill_tryAgain=True, skill_special=True, skill_classRestrict=False, skill_untrained=True, skill_classSkill=['Barbarian', 'Bard', 'Druid', 'Monk', 'Ranger', 'Rogue']).put()
+	
+#Perform
+
+
 Skill(skill_name='', skill_ability='', skill_trainedOnly=, skill_armorCheckPenalty=, skill_externalRef='', 
 	skill_descShort='', skill_tryAgain=, skill_special=, skill_classRestrict=, skill_untrained=, 
 	skill_classSkill=[]).put()
