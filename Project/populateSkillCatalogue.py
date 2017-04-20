@@ -108,6 +108,16 @@ Skill(skill_name='Perception', skill_ability='WIS', skill_trainedOnly=False, ski
 	skill_tryAgain=True, skill_special=True, skill_classRestrict=False, skill_untrained=True, skill_classSkill=['Barbarian', 'Bard', 'Druid', 'Monk', 'Ranger', 'Rogue']).put()
 	
 #Perform
+Skill(skill_name='Perform', skill_ability='CHA', skill_trainedOnly=False, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/perform.html#perform', 
+	skill_descShort='The Perform skill determines your ability to entertain in varying styles.', skill_tryAgain=False, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Bard', 'Monk', 'Rogue'], skill_hasSubSkill=True).put()
+	
+#Profession
+Skill(skill_name='Profession', skill_ability='WIS', skill_trainedOnly=True, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/profession.html#profession', 
+	skill_descShort='The Profession skill determines your ability in one or more specific profession.', skill_tryAgain=False, skill_special=True, skill_classRestrict=False, skill_untrained=False, 
+	skill_classSkill=['Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Wizard'], skill_hasSubSkill=True).put()
+
+#Ride
 
 
 Skill(skill_name='', skill_ability='', skill_trainedOnly=, skill_armorCheckPenalty=, skill_externalRef='', 
