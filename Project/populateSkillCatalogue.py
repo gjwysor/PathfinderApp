@@ -118,8 +118,42 @@ Skill(skill_name='Profession', skill_ability='WIS', skill_trainedOnly=True, skil
 	skill_classSkill=['Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Wizard'], skill_hasSubSkill=True).put()
 
 #Ride
+Skill(skill_name='Ride', skill_ability='DEX', skill_trainedOnly=False, skill_armorCheckPenalty=True, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/ride.html#ride', 
+	skill_descShort='The Ride skill determines your ability to ride mounts.', skill_tryAgain=True, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Barbarian', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger']).put()
+	
+#Sense Motive
+Skill(skill_name='Sense Motive', skill_ability='WIS', skill_trainedOnly=False, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/senseMotive.html#sense-motive', 
+	skill_descShort="The Sense Motive skill determines your ability to pick up on another's intentions.", skill_tryAgain=False, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Bard', 'Cleric', 'Monk', 'Paladin', 'Rogue']).put()
+	
+#Sleight of Hand
+Skill(skill_name='Sleight of Hand', skill_ability='DEX', skill_trainedOnly=True, skill_armorCheckPenalty=True, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/sleightOfHand.html#sleight-of-hand', 
+	skill_descShort='The Sleight of Hand skill determines your ability to pick pockets, draw hidden weapons, or perform other actions without being noticed.', skill_tryAgain=False,
+	skill_special=True, skill_classRestrict=False, skill_untrained=False, skill_classSkill=['Bard', 'Rogue']).put()
+	
+#Spellcraft
+Skill(skill_name='Spellcraft', skill_ability='INT', skill_trainedOnly=True, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/spellcraft.html#spellcraft', 
+	skill_descShort='The Spellcraft skill determines your ability to cast spells, identify or craft magic items, and identify spells as they are being cast.', skill_tryAgain=False,
+	skill_special=True, skill_classRestrict=False, skill_untrained=False, skill_classSkill=['Bard', 'Cleric', 'Druid', 'Paladin', 'Rogue', 'Sorcerer', 'Wizard']).put()
+	
+#Stealth
+Skill(skill_name='Stealth', skill_ability='DEX', skill_trainedOnly=False, skill_armorCheckPenalty=True, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/stealth.html#stealth', 
+	skill_descShort='The Stealth skill determines your ability to avoid detection by hiding or moving silently.', skill_tryAgain=True, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Bard', 'Monk', 'Ranger', 'Rogue']).put()
+	
+#Survival
+Skill(skill_name='Survival', skill_ability='WIS', skill_trainedOnly=False, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/survival.html#survival', 
+	skill_descShort='The Survival skill determines your ability to survive in the wild and navigate the wilderness. It also improves your ability to follow trails or tracks left by others.', 
+	skill_tryAgain=False, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Barbarian', 'Druid', 'Fighter', 'Rogue']).put()
+	
+#Swim
+Skill(skill_name='Swim', skill_ability='STR', skill_trainedOnly=False, skill_armorCheckPenalty=True, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/swim.html#swim', 
+	skill_descShort='The Swim skill determines how well you are able to swim, including during inclement weather.', skill_tryAgain=True, skill_special=True, skill_classRestrict=False, skill_untrained=True, 
+	skill_classSkill=['Barbarian', 'Druid', 'Fighter', 'Monk', 'Ranger', 'Rogue']).put()
 
-
-Skill(skill_name='', skill_ability='', skill_trainedOnly=, skill_armorCheckPenalty=, skill_externalRef='', 
-	skill_descShort='', skill_tryAgain=, skill_special=, skill_classRestrict=, skill_untrained=, 
-	skill_classSkill=[]).put()
+#Use Magic Device
+Skill(skill_name='Use Magic Device', skill_ability='CHA', skill_trainedOnly=True, skill_armorCheckPenalty=False, skill_externalRef='http://paizo.com/pathfinderRPG/prd/coreRulebook/skills/useMagicDevice.html#use-magic-device', 
+	skill_descShort='The Use Magic Device skill determines your ability to use magic items effectively, even if you are not otherwised trained to do so.', skill_tryAgain=False, skill_special=True,
+	skill_classRestrict=False, skill_untrained=False, skill_classSkill=['Bard', 'Rogue', 'Sorcerer']).put()
